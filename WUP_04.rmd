@@ -1,6 +1,6 @@
 ---
 title: "WUP_04"
-author: "Taylor Stohl!"
+author: "Taylor Stohl"
 date: "11-6-2021"
 output:
   html_document:
@@ -59,6 +59,13 @@ It appears that if we run this test, the LT HIGHSCHOOL is drastically different 
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+
+```{r}
+favstats(WORDSUM~DEGREE,data=gssdata)
+```
+
+It appears that the BACHELOR(9.2), GRADUATE(10.09), and JUNIOR COLLEGE(9.91)  categories have similar means. However, LT HIGHSCHOOL(7.75)and HIGHSCHOOL(8.28) have a lower mean by a couple points.
 
 ## Inferential Results
 
